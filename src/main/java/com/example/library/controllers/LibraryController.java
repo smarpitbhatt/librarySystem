@@ -11,6 +11,7 @@ public class LibraryController {
     @Autowired
     LibraryService libraryService;
 
+    @GetMapping("/")
     @PostMapping("/add")
     public String addBook( @RequestBody Book book)
     {
