@@ -11,6 +11,12 @@ public class LibraryController {
     @Autowired
     LibraryService libraryService;
 
+    @GetMapping("/")
+    public String home()
+    {
+        return "Helloooo";
+    }
+
     @PostMapping("/add")
     public String addBook( @RequestBody Book book)
     {
